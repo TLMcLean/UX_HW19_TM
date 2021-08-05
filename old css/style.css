@@ -1,0 +1,123 @@
+body {
+   color:white;
+   background-color: black;
+}
+header {
+   display:flex;
+   justify-content: space-between;
+}
+.logo{
+   width: 30%;
+}
+a{
+   padding: 5%;
+   color: white;
+   font-size: medium;
+}
+nav{
+   width: 30%;
+}
+* {
+   box-sizing: border-box;
+ }
+ 
+ #mySkills-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+   align-content: stretch;
+   
+ }
+ 
+ #mySkills-container > h1 {
+   width: 100%;
+   flex-basis: 100%;
+   align-self: flex-start;
+   text-align: center;
+ }
+ 
+ .skill-item {
+   position: relative;
+   border: maroon solid 5px;
+   width: 31%;
+   max-width: 600px;
+   max-height: 800px;
+   margin: 2% 1%;
+   padding: 2% 3%;
+ }
+ 
+ .skill-item > img { 
+   display: block;
+   width: ;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
+ 
+ .skill-item > h2,p {
+   text-align: center;
+ }
+ 
+ @media only screen and (max-width: 640px) {
+   .skill-item {
+     flex-direction: column;
+     width: 100%;
+   }
+ }
+ * {
+   box-sizing: border-box;
+ }
+ 
+ #myWork-grid {
+   display: grid;
+   grid-template-rows: 6em 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
+   gap: 3%; 
+   width: 100%;
+   height: fit-content;
+   padding: 2%;
+ }
+ h1 {
+   text-align:center;
+   font-size: xx-large;
+ }
+ .caseStudy-Grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: 1fr;
+ }
+ 
+ .CSdetials {
+   display: Flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: space-between;
+ }
+ 
+ .mockup {
+  margin: auto;
+ }
+ 
+ .title {
+   font-size: xx-large;
+ }
+ 
+ .subtitle {
+   font-size: x-large;
+ }
+ button {
+   text-align: right;
+   font-size: large;
+ }
+ 
+ @media only screen and (max-width: 640px) {
+   .caseStudy-Grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+   }
+ }
+ 
