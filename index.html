@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trina HW18</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/trinalorraine2021B copy.png" class="logo" alt="TrinaLorraine Logo">
+        <nav>
+        <a href="#">Skills</a> 
+        <a href="#myWork-grid">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Resume</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+          <h1>Trina Lorraine McLean</h1>
+          <h2 class="hero-subtitle">
+          </h2> 
+            <p>I specialize in UX/UI and Graphic Design and enjoy solving user problems that Are Described Like This. My skills include Tools, Approaches, and Roles Performed. 
+            </p>
+            </div>
+    </section>
+    <section id="mySkills-container">
+        <!--section header-->
+          <h1>My Skills</h1>
+        <!--Skill 1 Container-->
+          <div class="skill-item">
+            <img src="images/AdobeStock_273227473.jpeg" width="200px" height="200px">
+            <h2>Visual Style</h2>
+            <p>I'm baby synth literally austin vape, crucifix paleo tousled chartreuse authentic etsy ennui pug. Woke brunch deep v 8-bit snackwave, lumbersexual green juice viral gochujang glossier hammock kombucha austin narwhal mustache.</p>
+          </div>
+        <!--Skill 2 Container-->
+          <div class="skill-item">
+            <img src="images/Final El Gallo - med copy.jpg" width="200px" height="200px">
+            <h2>Branding Style</h2>
+            <p>Your branding style is one of your most valuable assets because if done effectively it can communicate to your audience your highly unique visual story.</p>
+            </div>
+        <!--Skill 3 Container-->
+          <div class="skill-item">
+            <img src="https://via.placeholder.com/200">
+            <h2>Layout Structure</h2>
+            <p>It is important to establish layout structure and patterns for your user to interact with. It helps to resolve any UI architectural problems and makes it easier for your user to absorb the information that you are presenting.</p>
+          </div>
+      </section>
+      <section id="myWork-grid">
+        <!--section header-->
+          <h1>My Work</h1>
+        <!--Case Study 1-->
+          <div class="caseStudy-Grid">
+            <img class="mockup" src="images/Respite Care Logo_Horizontal_Full Color-01 1.png">
+            <div class="CSdetails">
+              <h2 class="title">Case Study 1 - Respite Care of San Antonio - Non-Profit Redesign</h2>
+              <h3 class="subtitle">UX Design</h3>
+              <button type="button" href="#caseStudy1">View Case Study</button>
+            </div>
+          </div>
+        <!--Case Study 2-->
+          <div class="caseStudy-Grid">
+            <div class="CSdetails">
+              <h2 class="title">Case Study 2 - Link2it - Mobile App Design</h2>
+              <h3 class="subtitle">Product Design</h3>
+              <button type="button">View Case Study</button>
+            </div>
+            <img class="mockup" src="images/Link2it.png" height="400px">
+          </div>
+         <!--Case Study 3-->
+          <div class="caseStudy-Grid">
+            <img class="mockup" src="images/Bridge.png" height="400px">
+            <div class="CSdetails">
+              <h2 class="title">Case Study 3 - Bridge - Group Project - Mobile App</h2>
+              <h3 class="subtitle">UX/UI Design</h3>
+              <button type="button">View Case Study</button>
+            </div>
+          </div>
+      </section>
+    
+    <footer>
+        <a href="#">Linkedin</a>
+        <h5>©trinalorrainemclean2021</h5>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>
